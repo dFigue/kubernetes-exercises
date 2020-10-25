@@ -22,17 +22,17 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: hello
+      app: hello-pod
       tier: web
   template:
     metadata:
       labels:
-        app: hello
+        app: hello-pod
         tier: web
     spec:
       containers:
-      - name: hello-app
-        image: gcr.io/google-samples/hello-app:1.0
+      - name: hello-container
+        image: localhost:32000/hello-app:2.0.0
         ports:
         - containerPort: 8080
 # [END container_helloapp_deployment]
