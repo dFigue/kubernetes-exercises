@@ -31,7 +31,7 @@ spec:
         tier: web
     spec:
       containers:
-      - name: hello-containe
+      - name: hello-container
         image: localhost:32000/hello-app:1.0.0
         ports:
         - containerPort: 8080
