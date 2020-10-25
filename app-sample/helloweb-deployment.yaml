@@ -22,7 +22,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: hello-container
+      app: hello-pod
       tier: web
   template:
     metadata:
